@@ -3,7 +3,7 @@
 * @Date:   01-09-2016
 * @Email:  contact@nicolasfazio.ch
 * @Last modified by:   webmaster-fazio
-* @Last modified time: 01-09-2016
+* @Last modified time: 02-09-2016
 */
 
 class MyApp {
@@ -32,6 +32,13 @@ class HomePage {
     let pageSkeleton = `
       <section>
         <h1>${this.pageTitle}</h1>
+        <form>
+          <p>
+            <label for="email">Email:</label> <input type="email" id="email" name="email" value="" placeholder="votreemail.ch"/><br/>
+            <label for="password">Password:</label> <input type="password" id="password" name="password" value=""/><br/>
+            <button>Login</button>
+          </p>
+        </form>
       </section>`;
     // add page skeleton in body
     this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
