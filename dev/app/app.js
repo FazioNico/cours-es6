@@ -10,10 +10,24 @@ class MyApp {
 
   constructor(){
     this.appBody = document.getElementsByTagName("app")[0];
-    this.pageTitle = 'Hello world!'; 
   }
 
   start(){
+    // init HomePage
+    let homePage = new HomePage(this.appBody);
+  }
+
+}
+
+class HomePage {
+
+  constructor(appBody){
+    this.appBody = appBody
+    this.pageTitle = 'Hello world!';
+    this.initUI();
+  }
+
+  initUI(){
     // create page skeleton
     let pageSkeleton = `
       <section>
@@ -22,8 +36,6 @@ class MyApp {
     // add page skeleton in body
     this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
   }
-
 }
-
 let myApp = new MyApp();
 myApp.start();
