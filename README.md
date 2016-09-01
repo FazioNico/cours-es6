@@ -11,7 +11,7 @@
 
 ## Exo 01
   1. Créer une architecture pour le developpement de ton application
-
+```
    dev    
    ├── app
    │   ├── app.js
@@ -22,7 +22,7 @@
    │
    ├── www
        ├── index.html
-
+```
   2. Créer le fichier `index.html` avec les balise html5 de base (emmet: html TAB)
   Ajouter balise script pour importer le fichier qui suit:
   3. Créer un fichier `app.js` avec une class `MyApp`.
