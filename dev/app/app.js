@@ -53,7 +53,9 @@ class HomePage {
   onLogin(event){
     //debugger
     event.preventDefault()
+    let formInput = event.target
     console.log(event)
+    console.log(formInput)
   }
 
 }
