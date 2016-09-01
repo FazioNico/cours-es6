@@ -9,7 +9,5 @@
 # COURS ECMA SCRIPT 6
   DEVELOPPEMENT &amp; PRODUCTION WORKFLOW
 
-## Exo 03
-  1. Créer un formulaire avec un input de type email, un autre de type password et un bouton login dans class `HomePage`
-  2. ajouter un evenement sur le clic du bouton submit qui récupère les valeur de touts les champs dans une variable SANS changer de pager
-  3. afficher les variables du formulaire dans la console
+## Step 03 / Corr. sur step 4
+  1. 
