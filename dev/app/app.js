@@ -36,13 +36,26 @@ class HomePage {
           <p>
             <label for="email">Email:</label> <input type="email" id="email" name="email" value="" placeholder="votreemail.ch"/><br/>
             <label for="password">Password:</label> <input type="password" id="password" name="password" value=""/><br/>
-            <button>Login</button>
+            <button id="loginBtn">Login</button>
           </p>
         </form>
       </section>`;
     // add page skeleton in body
     this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
+    this.loadEventUI()
   }
+
+  loadEventUI(){
+    let loginForm = document.getElementsByTagName("form")[0];
+    loginForm.addEventListener("submit", this.onLogin, false)
+  }
+
+  onLogin(event){
+    //debugger
+    event.preventDefault()
+    console.log(event)
+  }
+
 }
 let myApp = new MyApp();
 myApp.start();
