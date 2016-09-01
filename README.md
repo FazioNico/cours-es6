@@ -3,13 +3,13 @@
 @Date:   01-09-2016
 @Email:  contact@nicolasfazio.ch
 @Last modified by:   webmaster-fazio
-@Last modified time: 01-09-2016
+@Last modified time: 02-09-2016
 -->
 
 # COURS ECMA SCRIPT 6
   DEVELOPPEMENT &amp; PRODUCTION WORKFLOW
 
-## Exo 01
+## Step 0
   1. Créer une architecture pour le developpement de ton application
 ```
    dev    
