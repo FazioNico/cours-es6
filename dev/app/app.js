@@ -10,7 +10,7 @@ class MyApp {
 
   constructor(){
     this.appBody = document.getElementsByTagName("app")[0];
-    this.pageTitle = 'Hello world!';
+    this.pageTitle = 'Hello world!'; 
   }
 
   start(){
