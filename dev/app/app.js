@@ -7,23 +7,22 @@
 */
 
 class MyApp {
+
   constructor(){
-    this.appBody = document.getElementsByTagName("body")[0];
+    this.appBody = document.getElementsByTagName("app")[0];
+    this.pageTitle = 'Hello world!';
   }
+
   start(){
-    // create pageSection
-    let pageSection   = document.createElement("section");
-    // create titleContner
-    let titleContner  = document.createElement("h1");
-    // create TextNode for title of page
-    let titleTextNode = document.createTextNode("Hello world!");
-    // push titleTextNode in titleContner
-    titleContner.appendChild(titleTextNode);
-    // push titleContner in pageSection
-    pageSection.insertBefore(titleContner, pageSection.childNodes[0]);
-    // push pageSection in appBody
-    this.appBody.insertBefore(pageSection, this.appBody.childNodes[0]);
+    // create page skeleton
+    let pageSkeleton = `
+      <section>
+        <h1>${this.pageTitle}</h1>
+      </section>`;
+    // add page skeleton in body
+    this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
   }
+
 }
 
 let myApp = new MyApp();
