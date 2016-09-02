@@ -28,34 +28,41 @@ class HomePage {
   }
 
   initUI(){
+    // remove all section before display UI
+    if(document.getElementsByTagName("section")[0]){
+      document.getElementsByTagName("section")[0].parentNode.removeChild(document.getElementsByTagName("section")[0])
+    }
     // create page skeleton
     let pageSkeleton = `
       <section>
         <h1>${this.pageTitle}</h1>
         <form>
           <p>
-            <label for="email">Email:</label> <input type="email" id="email" name="email" value="" placeholder="votreemail.ch"/><br/>
-            <label for="password">Password:</label> <input type="password" id="password" name="password" value=""/><br/>
-            <button id="loginBtn">Login</button>
+            <label for="email">Email:</label> <input type="email" name="email" value="" placeholder="votreemail.ch"  /><br/>
+            <label for="password">Password:</label> <input type="password" name="password" value=""  /><br/>
+            <button>Login</button>
           </p>
         </form>
       </section>`;
     // add page skeleton in body
     this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
     this.loadEventUI()
+
   }
 
   loadEventUI(){
     let loginForm = document.getElementsByTagName("form")[0];
-    loginForm.addEventListener("submit", this.onLogin, false)
+    loginForm.addEventListener("submit",  event => this.onLogin(event), false)
   }
 
   onLogin(event){
-    //debugger
     event.preventDefault()
-    let formInput = event.target
-    console.log(event)
-    console.log(formInput)
+    let formInput = document.forms[0].elements
+    for (let i = 0; i < formInput.length; i++) {
+      if(formInput[i].value){
+        console.log(formInput[i].value)
+      }
+    }
   }
 
 }
