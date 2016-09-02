@@ -10,4 +10,5 @@
   DEVELOPPEMENT &amp; PRODUCTION WORKFLOW
 
 ## Step 03 / Corr. sur step 4
-  1. 
+  1. Créer une nouvelle class `UserPage` qui reçevera les informations envoyée par le formulaire de la class `HomePage`
+  2. Dans la class `ÙserPage`, retirer la section de la page de de connection du DOM et afficher les informations envoyer par le formulaire `Hello ${userName}!` dans une nouvelle section.
