@@ -85,7 +85,6 @@ class UserPage {
   }
 
     initUI(){
-      console.log(this.formData.email)
       // remove all section before display UI
       if(document.getElementsByTagName("section")[0]){
         document.getElementsByTagName("section")[0].parentNode.removeChild(document.getElementsByTagName("section")[0])
