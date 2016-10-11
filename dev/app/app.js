@@ -3,14 +3,14 @@
 * @Date:   01-09-2016
 * @Email:  contact@nicolasfazio.ch
 * @Last modified by:   webmaster-fazio
-* @Last modified time: 01-09-2016
+* @Last modified time: 11-10-2016
 */
 
 class MyApp {
 
   constructor(){
     this.appBody = document.getElementsByTagName("app")[0];
-    this.pageTitle = 'Hello world!'; 
+    this.pageTitle = 'Hello world!';
   }
 
   start(){
