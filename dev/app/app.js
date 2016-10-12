@@ -3,7 +3,7 @@
 * @Date:   01-09-2016
 * @Email:  contact@nicolasfazio.ch
 * @Last modified by:   webmaster-fazio
-* @Last modified time: 02-09-2016
+* @Last modified time: 12-10-2016
 */
 
 class MyApp {
@@ -53,6 +53,8 @@ class HomePage {
   loadEventUI(){
     let loginForm = document.getElementsByTagName("form")[0];
     loginForm.addEventListener("submit",  event => this.onLogin(event), false)
+
+
   }
 
   onLogin(event){
@@ -89,6 +91,7 @@ class UserPage {
       if(document.getElementsByTagName("section")[0]){
         document.getElementsByTagName("section")[0].parentNode.removeChild(document.getElementsByTagName("section")[0])
       }
+
       // create page skeleton
       let pageSkeleton = `
         <section>
