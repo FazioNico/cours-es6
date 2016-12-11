@@ -1,0 +1,88 @@
+/*
+  use your custom css
+*/
+html ,body, section {
+  background: #333;
+}
+section:before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(180deg,rgba(0,0,0,.6),transparent);
+  width: 100%;
+  height: 84px;
+  top:0;
+  left:0;
+}
+section:after{
+  content: '';
+  position: absolute;
+  background: linear-gradient(0deg,rgba(0,0,0,.6),transparent);
+  width: 100%;
+  height: 84px;
+  bottom:0;
+  left:0;
+}
+section {
+  height :100%;
+  width :100%;
+  position :absolute;
+  top :0;
+  left : 0;
+  padding : 0px;
+  color : #888;
+}
+.valign {
+  width: 100%;
+}
+#download {
+  cursor: pointer;
+  display: inline;
+}
+*.btn {
+  border: 1px solid #fff;
+}
+.valign.center-align{
+  width: 100%;
+  background: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+}
+.greetings {
+  font-size: 3.2rem;
+  margin: 0;
+}
+nav {
+  position: absolute;
+  width: 100%;
+  top:0px;
+}
+.material-icons, a{
+  color: rgba(255, 255, 255, 0.50);
+}
+.input-field .prefix.active,.material-icons:hover, a:hover, address:hover  {
+  color: rgba(255, 255, 255, 1);
+}
+.input-field .prefix ~ input {
+  margin-left: 1rem;
+}
+footer {
+  position: absolute;
+  bottom:0px;
+  width: 100%;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.50);
+}
+footer a {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/* CSS Animation Effects */
+section {
+  background-size: cover !important;
+}
+*.displayOpacity{
+  opacity: 0;
+}
+*.fadeIn {
+  opacity: 1;
+  transition: 0.2s ease;
+}
