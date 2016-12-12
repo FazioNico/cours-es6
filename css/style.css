@@ -57,11 +57,15 @@ nav {
 .material-icons, a{
   color: rgba(255, 255, 255, 0.50);
 }
-.input-field .prefix.active,.material-icons:hover, a:hover, address:hover  {
+.input-field .prefix.active,.material-icons:hover, a:hover, address:hover,.input-field input[type=search]:focus+label i, .input-field input[type=search]:focus+label i, .input-field input[type=search]:focus ~ .mdi-navigation-close, .input-field input[type=search]:focus ~ .material-icons {
   color: rgba(255, 255, 255, 1);
 }
 .input-field .prefix ~ input {
   margin-left: 1rem;
+}
+.input-field input[type=search]:focus {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
 }
 footer {
   position: absolute;
@@ -73,6 +77,9 @@ footer {
 footer a {
   text-decoration: underline;
   font-style: italic;
+}
+footer .row {
+  margin-bottom:10px;
 }
 
 /* CSS Animation Effects */
