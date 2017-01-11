@@ -9,8 +9,9 @@
 <img src="http://i.imgur.com/7v9us2t.png">
 
 # COURS ECMA SCRIPT 6
-  DEVELOPPEMENT &amp; PRODUCTION WORKFLOW
+DEVELOPPEMENT &amp; PRODUCTION WORKFLOW
 
+Cours Javascript ES6 pour la dernière semaine de formation Webprogramer à Nomades Advenced Technologies ([http://nomade.ch](http://nomades.ch))
 ## Programme
 
 ### Les Classes
