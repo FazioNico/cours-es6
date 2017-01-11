@@ -52,7 +52,7 @@ Il sont distinctement séparé afin de pouvoir comparer les "step" entre eux.
 
 Voir les branches:
 - `step0` à `step10`
-- puis `step10-01_timer` à `step10-19_final_fix)`
+- puis `step10-01_timer` à `step10-19_final_fix`
 
 ## Auteur
 Salut, je suis un Font-End developpeur qui vit à Genève. Je conçois et developpe des application web & mobile depuis plus de 15 ans et j'enseigne principalement Javascript ES6 et TypeScript à Nomades Advenced Technologies. Tu peux me suivre sur Twitter @FazioNico ou visiter mon site web http://nicolasfazio.ch
