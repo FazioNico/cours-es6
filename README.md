@@ -11,7 +11,10 @@
 # COURS ECMA SCRIPT 6
 DEVELOPPEMENT &amp; PRODUCTION WORKFLOW
 
-Cours Javascript ES6 pour la dernière semaine de formation Webprogramer à Nomades Advenced Technologies ([http://nomade.ch](http://nomades.ch))
+Cours Javascript ES6 pour la dernière semaine de formation Webprogramer à Nomades Advenced Technologies
+
+Inscriptions: [http://nomade.ch](http://nomades.ch)
+
 ## Programme
 
 ### Les Classes
