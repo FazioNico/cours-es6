@@ -59,12 +59,12 @@ Voir les branches:
 - Support de cours :  
   - [Slides](https://fazionico.github.io/all-formation/slides-formation-es6.html#/)
   - [PDF](https://fazionico.github.io/all-formation/pdf/pdf-formation-es6.pdf)
+
 - Ressources :
-  - [http://es6-features.org](http://es6-features.org)
-  -
-  [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+  - [es6-features.org](http://es6-features.org)
+  - [MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript)
   - [Exploring JS](http://exploringjs.com/es6/)
-  
+
 ## Objectifs
 - Programmation ES6 Objets
 - Séparation des concernes
