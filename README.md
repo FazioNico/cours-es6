@@ -3,7 +3,7 @@
 @Date:   01-09-2016
 @Email:  contact@nicolasfazio.ch
 @Last modified by:   webmaster-fazio
-@Last modified time: 12-01-2017
+@Last modified time: 13-01-2017
 -->
 
 <img src="http://i.imgur.com/7v9us2t.png">
@@ -60,8 +60,8 @@ Voir les branches:
 
 ## Support et ressources
 - Support de cours :  
-  - [Slides](https://fazionico.github.io/all-formation/slides-formation-es6.html#/)
-  - [PDF](https://fazionico.github.io/all-formation/pdf/pdf-formation-es6.pdf)
+  - [Slides](https://fazionico.github.io/all-formation/auth.html#slides-formation-es6.html)
+  - [PDF](https://fazionico.github.io/all-formation/auth.html#pdf/pdf-formation-es6.pdf)
 
 - Ressources :
   - [es6-features.org](http://es6-features.org)
