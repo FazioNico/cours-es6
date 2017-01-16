@@ -30,6 +30,7 @@ section {
   left : 0;
   padding : 0px;
   color : #888;
+  overflow: hidden;
 }
 .valign {
   width: 100%;
@@ -53,6 +54,7 @@ nav {
   position: absolute;
   width: 100%;
   top:0px;
+  left: 0;
 }
 .material-icons, a{
   color: rgba(255, 255, 255, 0.50);
@@ -70,18 +72,68 @@ nav {
 footer {
   position: absolute;
   bottom:0px;
+  left:0;
   width: 100%;
   z-index: 1;
   color: rgba(255, 255, 255, 0.50);
 }
-footer a {
+footer a, #logout {
   text-decoration: underline;
   font-style: italic;
+  cursor: pointer;
 }
 footer .row {
   margin-bottom:10px;
 }
-
+#close{
+  /*background: red;*/
+  width: 80px; /*50px;*/
+  /*height: 50px;*/
+  position: absolute;
+  top: -40px; /*-50px;*/
+  left:50%;
+  padding: 10px 15px;
+  margin-left: -40px;/*-25px;*/
+  color: rgba(255, 255, 255, 0.50);
+  cursor: pointer;
+}
+#close:hover {
+  color:#fff;
+}
+aside {
+  position: absolute;
+  left:0;
+  bottom: -450px;
+  background: #333;
+  display: block;
+  width: 100%;
+  height: 450px;
+  max-height: 450px;
+  z-index: 2;
+  transition: 0.25s all ease;
+}
+aside.open {
+  transform: translateY(-450px);
+}
+aside.open #close {
+  background: #333;
+  color:#fff;
+}
+button,button:focus  {
+  background: #fff;
+  color:#333;
+  border:0px;
+  padding: 3px 20px;
+}
+aside h1 {
+  font-size: 1.8rem;
+}
+aside .row {
+  margin-bottom: 0px;
+}
+aside input[type=text] {
+  height: 2rem;
+}
 /* CSS Animation Effects */
 section {
   background-size: cover !important;
