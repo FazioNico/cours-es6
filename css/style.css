@@ -131,7 +131,7 @@ aside h1 {
 aside .row {
   margin-bottom: 0px;
 }
-aside input[type=text] {
+aside input[type=text], aside input[type=url] {
   height: 2rem;
 }
 /* CSS Animation Effects */
