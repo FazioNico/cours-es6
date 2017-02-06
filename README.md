@@ -3,7 +3,7 @@
 @Date:   01-09-2016
 @Email:  contact@nicolasfazio.ch
 @Last modified by:   webmaster-fazio
-@Last modified time: 15-09-2016
+@Last modified time: 06-02-2017
 -->
 
 # COURS ECMA SCRIPT 6
@@ -17,3 +17,5 @@
   3. Rendre exportable les class `HomePage` et `UserPage`
   4. Importer les class `HomePage` et `UserPage` dans le fichier `app.js`.
   5. Mettre à jour le class `Myapp` pour pouvoir utiliser les class  `HomePage` et `UserPage`
+
+  
