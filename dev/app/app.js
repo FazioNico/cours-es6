@@ -28,10 +28,6 @@ class HomePage {
   }
 
   initUI(){
-    // remove all section before display UI
-    if(document.getElementsByTagName("section")[0]){
-      document.getElementsByTagName("section")[0].parentNode.removeChild(document.getElementsByTagName("section")[0])
-    }
     // create page skeleton
     let pageSkeleton = `
       <section>
@@ -52,7 +48,7 @@ class HomePage {
 
   loadEventUI(){
     let loginForm = document.getElementsByTagName("form")[0];
-    loginForm.addEventListener("submit",  event => this.onLogin(event), false)
+    loginForm.addEventListener("submit",  event => this.onLogin(event))
 
 
   }
@@ -63,16 +59,14 @@ class HomePage {
     let formInput = {}
     let form = document.forms[0].elements
     for (let i = 0; i < form.length; i++) {
-      if(form[i].value){
-        formInput[form[i].name] = form[i].value
-        validationInput++
-      }
+      if(!form[i].value) return ;
+      formInput[form[i].name] = form[i].value
+      validationInput++
     }
     console.log(formInput)
-    if(validationInput === 2){
-      console.log('load UserPage')
-      new UserPage(this.appBody,formInput);
-    }
+    if(validationInput !== 2) return ;
+    console.log('load UserPage')
+    new UserPage(this.appBody,formInput);    
   }
 
 }
