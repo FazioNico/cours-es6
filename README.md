@@ -9,7 +9,7 @@
 # COURS ECMA SCRIPT 6
   DEVELOPPEMENT &amp; PRODUCTION WORKFLOW
 
-## Exo 02
-  1. Créer une class `HomePage` pour la page d'accueil de l'application.
-  2. Créer une fonction `initUI`  dans la class `HomePage` qui s'occupe de l'affichage du `Hello world!`
-  3. instentier la class `HomePage` depuis la function `start` de la class `MyApp`.
+## Step 2 / corr. sur step 3
+  1. Créer un formulaire avec un input de type email, un autre de type password et un bouton login dans class `HomePage`
+  2. ajouter un evenement sur le clic du bouton submit qui récupère les valeur de touts les champs dans une variable SANS changer de pager
+  3. afficher les variables du formulaire dans la console
