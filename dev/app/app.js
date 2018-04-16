@@ -55,7 +55,7 @@ class HomePage {
     event.preventDefault()
     let formInput = document.forms[0].elements
     for (let i = 0; i < formInput.length; i++) {
-      if(!formInput[i].value return;
+      if(!formInput[i].value) return;
       console.log(formInput[i].value)
     }
   }
