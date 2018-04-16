@@ -6,14 +6,16 @@
 * @Last modified time: 11-10-2016
 */
 
-class MyApp {
 
-  constructor(){
-    this.appBody = document.getElementsByTagName("app")[0];
-    this.pageTitle = 'Hello world!';
+
+class HomePage {
+  constructor(appBody){
+    this.appBody = appBody;
+    this.pageTitle = 'Hello World'
+    this.initUI()
   }
 
-  start(){
+  initUI(){
     // create page skeleton
     let pageSkeleton = `
       <section>
@@ -22,8 +24,20 @@ class MyApp {
     // add page skeleton in body
     this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
   }
+}
+
+class MyApp {
+
+  constructor(){
+    this.appBody = document.getElementsByTagName("app")[0];
+  }
+
+  start(){
+    new HomePage(this.appBody)
+  }
 
 }
+
 
 let myApp = new MyApp();
 myApp.start();
