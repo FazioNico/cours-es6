@@ -59,14 +59,16 @@ class HomePage {
     let formInput = {}
     let form = document.forms[0].elements
     for (let i = 0; i < form.length; i++) {
-      if(!form[i].value) return ;
-      formInput[form[i].name] = form[i].value
-      validationInput++
+      console.log(formInput)
+      if(form[i].value){
+        formInput[form[i].name] = form[i].value
+        validationInput++
+      };
     }
     console.log(formInput)
     if(validationInput !== 2) return ;
     console.log('load UserPage')
-    new UserPage(this.appBody,formInput);    
+    new UserPage(this.appBody,formInput);
   }
 
 }
