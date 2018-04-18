@@ -36,4 +36,3 @@ apiKey-config.js
 dist/
 .publish/
 providers/
-components/

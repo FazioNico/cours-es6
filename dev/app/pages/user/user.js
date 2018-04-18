@@ -1,3 +1,5 @@
+import { TimerComponent } from '../../components/timer/timer.component';
+
 export class UserPage {
 
   constructor(appBody,formInput){
@@ -22,20 +24,8 @@ export class UserPage {
     `;
     // add page skeleton in body
     this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
-
-    document.querySelector("#time").innerHTML = this.getTime(new Date())
-    setInterval(_=> {
-        document.querySelector("#time").innerHTML = this.getTime(new Date())
-    },1000)
+    new TimerComponent('#tim');
   }
 
-  getTime(time){
-    return    `
-    <time datetime="${(time.getFullYear() < 10)?'0'+time.getFullYear():time.getFullYear()}-${(time.getMonth() < 10)?'0'+time.getMonth():time.getMonth()}-${(time.getDate() < 10)?'0'+time.getDate():time.getDate()} ${(time.getHours() < 10)?'0'+time.getHours():time.getHours()}:${(time.getMinutes() < 10)?'0'+time.getMinutes():time.getMinutes()}:${(time.getSeconds() < 10)?'0'+time.getSeconds():time.getSeconds()}">
-      ${(time.getHours() < 10)?'0'+time.getHours():time.getHours()}:
-      ${(time.getMinutes() < 10)?'0'+time.getMinutes():time.getMinutes()}:
-      ${(time.getSeconds() < 10)?'0'+time.getSeconds():time.getSeconds()}
-    </time>
-    `;
-  }
+
 }
