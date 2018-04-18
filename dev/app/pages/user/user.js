@@ -25,6 +25,14 @@ export class UserPage {
     // add page skeleton in body
     this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
     new TimerComponent('#tim');
+
+    // test
+    let url = 'https://api.unsplash.com/photos/random?client_id=f97fd672a4603d82fbccad44251ccad969da447cc5035947f1beef0b0a629518'
+    fetch(url)
+    .then(res=> res.json())
+    .then(res=>{
+      document.body.style.backgroundImage = `url('${res.urls.regular}')`
+    })
   }
 
 
