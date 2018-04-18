@@ -31,11 +31,6 @@ export class HomePage {
     let loginForm = document.getElementsByTagName("form")[0];
     loginForm.addEventListener("submit",  event => this.onLogin(event))
 
-
-    setTimeout(_=> {
-      $('body').fadeOut()
-    }, 2000)
-
   }
 
   onLogin(event){
