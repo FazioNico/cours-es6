@@ -32,6 +32,7 @@
     "vinyl-transform": "^1.0.0"
   },
   "dependencies": {
+    "firebase": "^4.12.1",
     "jquery": "^3.3.1"
   }
 }
