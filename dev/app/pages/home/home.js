@@ -1,4 +1,5 @@
 import { UserPage } from '../user/user'
+import { homeSkeleton } from './home-ui'
 
 export class HomePage {
 
@@ -10,17 +11,7 @@ export class HomePage {
 
   initUI(){
     // create page skeleton
-    let pageSkeleton = `
-      <section>
-        <h1>${this.pageTitle}</h1>
-        <form>
-          <p>
-            <label for="email">Email:</label> <input type="email" name="email" value="" placeholder="votreemail.ch"  /><br/>
-            <label for="password">Password:</label> <input type="password" name="password" value=""  /><br/>
-            <button>Login</button>
-          </p>
-        </form>
-      </section>`;
+    let pageSkeleton = homeSkeleton({pageTitle:this.pageTitle});
     // add page skeleton in body
     this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
     this.loadEventUI()

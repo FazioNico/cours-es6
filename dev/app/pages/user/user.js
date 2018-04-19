@@ -1,5 +1,6 @@
 import { TimerComponent } from '../../components/timer/timer.component';
 import fetchService from '../../providers/fetch.service'
+import { userSkeleton } from './user-ui'
 
 export class UserPage {
 
@@ -17,12 +18,10 @@ export class UserPage {
     }
 
     // create page skeleton
-    let pageSkeleton = `
-      <section>
-        <div id="time"></div>
-        <h1>${this.pageTitle} ${this.formData.email} !</h1>
-      </section>
-    `;
+    let pageSkeleton = userSkeleton({
+      pageTitle: this.pageTitle,
+      formData: this.formData
+    });
     // add page skeleton in body
     this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
     new TimerComponent('#time');
