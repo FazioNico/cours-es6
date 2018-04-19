@@ -1,4 +1,5 @@
 import { TimerComponent } from '../../components/timer/timer.component';
+import fetchService from '../../providers/fetch.service'
 
 export class UserPage {
 
@@ -24,15 +25,19 @@ export class UserPage {
     `;
     // add page skeleton in body
     this.appBody.insertAdjacentHTML( 'afterbegin', pageSkeleton )
-    new TimerComponent('#tim');
+    new TimerComponent('#time');
 
-    // test
-    let url = 'https://api.unsplash.com/photos/random?client_id=f97fd672a4603d82fbccad44251ccad969da447cc5035947f1beef0b0a629518'
-    fetch(url)
-    .then(res=> res.json())
+    // appeler le provider et chainer avec le .then
+    fetchService.get(
+      'https://api.unsplash.com/photos/random?client_id=f97fd672a4603d82fbccad44251ccad969da447cc5035947f1beef0b0a629518', {
+      headers: {
+        "x-access-token": "xxxxxx"
+      }
+    })
     .then(res=>{
       document.body.style.backgroundImage = `url('${res.urls.regular}')`
     })
+
   }
 
 
