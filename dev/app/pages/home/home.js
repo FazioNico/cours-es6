@@ -11,6 +11,11 @@ export class HomePage {
   }
 
   initUI(){
+    // remove all section before display UI
+    if(document.getElementsByTagName("section")[0]){
+      document.getElementsByTagName("section")[0].parentNode.removeChild(document.getElementsByTagName("section")[0])
+    }
+    document.body.style.backgroundImage = `none`
     // create page skeleton
     let pageSkeleton = homeSkeleton({pageTitle:this.pageTitle});
     // add page skeleton in body

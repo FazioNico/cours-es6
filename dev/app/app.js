@@ -35,7 +35,7 @@ class MyApp {
       if(user){
         console.log('LOG');
         // init UserPage
-        new UserPage(this.appBody, user)
+        new UserPage(this.appBody, user, fb)
       }
       else {
         console.log('NOT LOG');
