@@ -5,8 +5,11 @@ export class TimerComponent {
       return alert(`Pas de selector ${selector} trouvé dans le DOM.`)
     }
     document.querySelector(selector).innerHTML = this.getTime(new Date())
-    setInterval(_=> {
-        document.querySelector(selector).innerHTML = this.getTime(new Date())
+    this.interval = setInterval(_=> {
+      if(!document.querySelector(selector)) {
+        return clearInterval(this.interval);
+      };
+      document.querySelector(selector).innerHTML = this.getTime(new Date())
     },1000)
   }
 
